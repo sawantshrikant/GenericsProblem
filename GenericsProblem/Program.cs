@@ -1,8 +1,28 @@
 ﻿using System;
-public class Program
+
+namespace GenericsProblem
 {
-    private static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Welcome To The Problem Using Generics!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to the Three Integers Max program!");
+
+            ThreeIntegersMax maxFinder = new ThreeIntegersMax();
+
+            
+            Console.WriteLine("Test case 1:");
+            maxFinder.FindIntNumber(10, 5, 2);
+
+            
+            Console.WriteLine("Test case 2:");
+            maxFinder.FindIntNumber(5, 10, 2);
+
+            
+            Console.WriteLine("Test case 3:");
+            maxFinder.FindIntNumber(5, 2, 10);
+
+            Console.ReadLine();
+        }
     }
 }
