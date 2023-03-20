@@ -23,5 +23,20 @@ namespace GenericsProblem
                 Console.WriteLine("Two or more integers are equal to the maximum value.");
             }
         }
+        public void FindMaxFloatNumber(float a, float b, float c)
+        {
+            if (a >= b && a >= c)
+                Console.WriteLine("a is max");
+            else if (b >= a && b >= c)
+                Console.WriteLine("b is max");
+            else if (c >= a && c >= b)
+                Console.WriteLine("c is max");
+            else
+            {
+                Console.WriteLine("Two or more integers are equal to the maximum value.");
+            }
+               
+        }
+
     }
 }
