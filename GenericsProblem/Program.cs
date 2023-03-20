@@ -17,6 +17,9 @@ namespace GenericsProblem
             Console.WriteLine("Test case 2 (floats):");
             maxFinder.FindMaxFloatNumber(10.2f, 5.6f, 8.7f);
 
+            Console.WriteLine("Test case 3 (String):");
+            maxFinder.FindMaxString("20ABC", "30BCD", "15DEF");
+
 
             Console.ReadLine();
         }

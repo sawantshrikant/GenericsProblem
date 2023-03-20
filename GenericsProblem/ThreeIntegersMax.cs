@@ -38,5 +38,19 @@ namespace GenericsProblem
                
         }
 
+        public void FindMaxString(String a, String b, String c)
+        {
+            if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+                Console.WriteLine("a is max");
+            else if (b.CompareTo(a) > 0 && b.CompareTo(c) > 0)
+                Console.WriteLine("b is max");
+            else if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+                Console.WriteLine("c is max");
+            else 
+            {
+                Console.WriteLine("Two or more integers are equal to the maximum value.");
+            }
+        }
+
     }
 }
